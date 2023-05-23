@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <>
-      <div>
+      <div className="justify-center flex">
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -19,7 +19,7 @@ export default function App() {
       <h1>Vite + React + TypeScript</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
+        <p className="mt-3">
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>

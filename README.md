@@ -6,6 +6,7 @@ Full **React** TypeScript starter with automatic bundling into a **progressive w
 - Vite
 - TypeScript
 - PWA
+- TailwindCSS
 - SCSS
 - React Router
 - Autoprefixer
@@ -13,7 +14,6 @@ Full **React** TypeScript starter with automatic bundling into a **progressive w
 - ESLint
 - Prettier
 - Stylelint
-- WASM
 - Yarn
 
 ## develop

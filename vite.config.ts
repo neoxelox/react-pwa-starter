@@ -1,16 +1,14 @@
 import react from "@vitejs/plugin-react-swc";
 import autoprefixer from "autoprefixer";
+import tailwindcss from "tailwindcss";
+
 import cssnano from "cssnano";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
-import topLevelAwait from "vite-plugin-top-level-await";
-import wasm from "vite-plugin-wasm";
 
 export default defineConfig({
   plugins: [
     react(),
-    wasm(),
-    topLevelAwait(),
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: "*",
@@ -57,7 +55,7 @@ export default defineConfig({
   ],
   css: {
     postcss: {
-      plugins: [autoprefixer(), cssnano()],
+      plugins: [tailwindcss({ config: ".tailwindrc.cjs" }), autoprefixer(), cssnano()],
     },
   },
 });
