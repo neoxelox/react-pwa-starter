@@ -11,15 +11,15 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: "*",
+      includeAssets: "**/*",
       includeManifestIcons: true,
       manifest: {
         id: "starter.example",
         name: "React PWA Starter",
         short_name: "Starter",
         description: "Full React TypeScript starter with automatic bundling into a progressive web app",
-        theme_color: "#42b883",
-        background_color: "#ffffff",
+        theme_color: "#1b1b1f",
+        background_color: "#1b1b1f",
         orientation: "any",
         icons: [
           {
@@ -39,14 +39,19 @@ export default defineConfig({
             type: "image/png",
           },
           {
-            src: "/icon-225x225.png",
-            sizes: "225x225",
+            src: "/icon-256x256.png",
+            sizes: "256x256",
             type: "image/png",
             purpose: "any maskable",
           },
           {
             src: "/icon-512x512.png",
             sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "/icon-1024x1024.png",
+            sizes: "1024x1024",
             type: "image/png",
           },
         ],

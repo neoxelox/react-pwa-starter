@@ -31,3 +31,7 @@ Full **React** TypeScript starter with automatic bundling into a **progressive w
 ## build
 
 **`yarn build`**
+
+## preview
+
+**`yarn preview`**
